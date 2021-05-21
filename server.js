@@ -7,7 +7,7 @@ const routes = require('./controller');
 require('dotenv').config()
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 require('dotenv').config();
 app.get('/', (req, res) => {
     res.send(process.env.SECRET_KEY);
@@ -18,7 +18,7 @@ app.listen(port, () => {
 
 // we are going to change the port if we are deploying in heroku
 // if not we are demoing in localhost
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3001
 
 const sequelize = require("./config/connection");
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
