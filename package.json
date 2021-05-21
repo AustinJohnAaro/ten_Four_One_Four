@@ -1,7 +1,7 @@
 {
   "name": "ten_Four_One_Four",
   "version": "1.0.0",
-  "description": "F%$# you!",
+  "description": "Is this you",
   "main": "server.js",
   "dependencies": {
     "bcrypt": "^5.0.1",
@@ -13,6 +13,7 @@
     "mysql2": "^2.2.5",
     "sequelize": "^6.6.2"
   },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon server.js",
@@ -21,12 +22,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AustinJohnAaro/ten_Four_One_Four.git"
+    "url": "https://github.com/AustinJohnAaro/ten_Four_One_Four"
   },
-  "author": "https://github.com/AustinJohnAaro/ten_Four_One_Four.git",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AustinJohnAaro/ten_Four_One_Four.git/issues"
+    "url": " https://austinjohnaaro.github.io/ten_Four_One_Four/"
   },
-  "homepage": "https://github.com/AustinJohnAaro/ten_Four_One_Four.git#readme"
+  "homepage": " https://austinjohnaaro.github.io/ten_Four_One_Four/"
 }
