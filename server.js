@@ -13,7 +13,7 @@ const sequelize = require("./config/connection");
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
-  secret: 'Group ten project',
+  secret: 'There will be NO more Group projects',
   cookie: {},
   resave: false,
   saveUninitialized: true,

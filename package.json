@@ -1,7 +1,7 @@
 {
   "name": "second-project",
   "version": "1.0.0",
-  "description": "So here is the plan, in case you miss today's meeting.",
+  "description": "F%$# you!",
   "main": "server.js",
   "dependencies": {
     "bcrypt": "^5.0.1",
@@ -22,12 +22,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/.git"
+    "url": "git+https://github.com/AustinJohnAaro/ten_Four_One_Four.git"
   },
-  "author": "",
+  "author": "https://github.com/AustinJohnAaro/ten_Four_One_Four.git",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com//issues"
+    "url": "https://github.com/AustinJohnAaro/ten_Four_One_Four.git/issues"
   },
-  "homepage": "https://github.com/#readme"
+  "homepage": "https://github.com/AustinJohnAaro/ten_Four_One_Four.git#readme"
 } 
