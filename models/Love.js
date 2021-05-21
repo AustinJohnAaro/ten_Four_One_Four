@@ -34,4 +34,4 @@ Love.init(
   }
 );
 
-module.exports = Love;
+module.exports = Love; 
