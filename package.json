@@ -22,12 +22,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/richardyjkim/second-project.git"
+    "url": "git+https://github.com/.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/richardyjkim/second-project/issues"
+    "url": "https://github.com//issues"
   },
-  "homepage": "https://github.com/richardyjkim/second-project#readme"
-}
+  "homepage": "https://github.com/#readme"
+} 

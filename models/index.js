@@ -58,4 +58,4 @@ Love.belongsTo(Post, {
   foreignKey: 'post_id'
 });
 
-module.exports = { User, Post, Comment, Love };
+module.exports = { User, Post, Comment, Love }; 

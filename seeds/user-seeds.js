@@ -3,11 +3,11 @@ const sequelize = require('../config/connection');
 
 const userData = [
   {
-    username: 'richard',
-    password: '1234'
+    username: '',
+    password: ''
   }
 ];
 
 const seedUsers = () => User.bulkCreate(userData, { individualHooks: true });
 
-module.exports = seedUsers;
+module.exports = seedUsers; 

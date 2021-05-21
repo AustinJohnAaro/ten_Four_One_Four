@@ -9,4 +9,5 @@ const lovedata = [
 
 const seedLoves = () => Love.bulkCreate(lovedata);
 
-module.exports = seedLoves;
+module.exports = seedLoves; 
+

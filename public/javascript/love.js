@@ -1,6 +1,6 @@
 async function loveClickHandler(event) {
   event.preventDefault();
-
+  console.log("hello")
   let id = event.target.getAttribute("post_id");
 
   const response = await fetch('/api/posts/uplove', {
@@ -15,11 +15,12 @@ async function loveClickHandler(event) {
 
   if (response.ok) {
     document.location.reload();
+    alert("I love it too")
   } else {
-    alert(response.statusText);
+    alert("You already loved this test");
   }
 }
 
 document.querySelectorAll('.love-btn').forEach(item => {
   item.addEventListener('click', loveClickHandler)
-});
+}); 
