@@ -3,8 +3,8 @@ const sequelize = require('../config/connection');
 
 const userData = [
   {
-    username: '',
-    password: ''
+    username: 'Shit Head',
+    password: 'AustinMeryl1472!%'
   }
 ];
 
