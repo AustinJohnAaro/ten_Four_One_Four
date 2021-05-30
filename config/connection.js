@@ -8,7 +8,7 @@ var mysql = require('mysql');
 var connection = mysql.createConnection(process.env.JAWSDB_URL);
 
 connection.connect();
-
+JAWSDB_URL:'mysql://hm0tfw0xsfp2w0n9:r5zvvht1n1blep0h@ik1eybdutgxsm0lo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/wa0qgae5sdrboh8b' 
 connection.query('SELECT 1 + 1 AS solution', function(err, rows, fields) {
   if (err) throw err;
 
@@ -25,8 +25,7 @@ if (process.env.JAWSDB_URL) {
 } else {
   sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PW, {
     
-  //    host: 'ik1eybdutgxsm0lo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com', 
-  //  dialect: 'mysql', //hm0tfw0xsfp2w0n9:r5zvvht1n1blep0h@ik1eybdutgxsm0lo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/wa0qgae5sdrboh8b', 
+  
      port: 3306 
      
   });

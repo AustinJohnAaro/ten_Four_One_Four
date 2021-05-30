@@ -8,4 +8,12 @@
 /DS.store
 /.env
 
+/.env.staging
+
+/.env.development 
+
+/.module 'mysql' 
+
+
+
 

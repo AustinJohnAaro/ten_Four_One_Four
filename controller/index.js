@@ -10,11 +10,6 @@ router.use('/api', apiRoutes);
 
 // Pass true to env() to make it use the current environment stage.
 
-require('custom-env').env(true)
 
-console.log(process.env.APP_NAME)
-console.log(process.env.USERNAME)
-console.log(process.env.PASSKEY)
-NODE_ENV=staging 
 
 module.exports = router; 

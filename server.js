@@ -7,16 +7,17 @@ require('custom-env').env()
 require ('custom-env').env('staging')
 
 const app = express();
-
+JAWSDB_URL:'mysql://hm0tfw0xsfp2w0n9:r5zvvht1n1blep0h@ik1eybdutgxsm0lo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/wa0qgae5sdrboh8b'
+ 
 // it is on heroku fuck face! 
 
-const PORT = process.env.PORT || 3001
 
-const sequelize = require("./config/connection");
+
+var sequelize = require("./config/connection");
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
-  secret: 'Group ten project',
+  secret: 'j*h*',
   cookie: {},
   resave: false,
   saveUninitialized: true,
@@ -37,7 +38,14 @@ const hbs = exphbs.create({ helpers });
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
+require('custom-env').env(true)
 
+console.log(process.env.APP_NAME)
+console.log(process.env.USERNAME)
+console.log(process.env.PASSKEY)
+NODE_ENV=staging 
+
+const PORT = process.env.PORT || 3306
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`App now listening on port ${PORT}`))
