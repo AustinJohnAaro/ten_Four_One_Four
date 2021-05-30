@@ -43,6 +43,10 @@ require('custom-env').env(true)
 console.log(process.env.APP_NAME)
 console.log(process.env.USERNAME)
 console.log(process.env.PASSKEY)
+console.log(process.env.NODE_ENV) 
+console.log(process.env.NODE_ENV === 'dev') 
+console.log(process.env.NODE_ENV.length)
+console.log(process.env.NODE_ENV.trim() === 'dev') 
 NODE_ENV=staging 
 
 const PORT = process.env.PORT || 3306
