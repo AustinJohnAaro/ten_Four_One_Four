@@ -1,6 +1,6 @@
+/.NODE_ENV
 
-
-
+/.throw new Error('Dialect needs to be explicitly supplied as of v4.0.0');
 
 
 /node_modules
@@ -16,4 +16,9 @@
 
 /."cross-env NODE_ENV=dev node desolate-wildwood-28878"
 
+
+/No env file present for the current environment:  undefined 
+ /Falling back to .env config
+/No env file present for the current environment:  undefined 
+ /Falling back to .env config 
 

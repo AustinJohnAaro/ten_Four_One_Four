@@ -1,22 +1,14 @@
+
 {
-  "name": "ten_Four_One_Four",
-  "version": "1.0.0",
-  "description": "Is this you",
+  "Dialect": "v4.0.0",
   "main": "server.js",
-  "dependencies": {
-    "bcrypt": "^5.0.1",
-    "connect-session-sequelize": "^7.1.1",
-    "cross-env": "^7.0.3",
-    "custom-env": "^2.0.1",
-    "dotenv": "^9.0.2",
-    "express": "^4.17.1",
-    "express-handlebars": "^5.3.2",
-    "express-session": "^1.17.1",
-    "sequelize": "^6.6.2"
-  },
+  
+
+
+
   "scripts": {
     "dev": "SET NODE_ENV=development&& node server.js",
-    "start": "//hm0tfw0xsfp2w0n9:r5zvvht1n1blep0h@ik1eybdutgxsm0lo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/wa0qgae5sdrboh8b",
+    "start": "node server",
     
     "seed": "node seeds/server.js"
   },

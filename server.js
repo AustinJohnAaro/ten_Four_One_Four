@@ -2,18 +2,19 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
-const routes = require('./controller');
+
 require('custom-env').env()
 require ('custom-env').env('staging')
 
 const app = express();
 JAWSDB_URL:'mysql://hm0tfw0xsfp2w0n9:r5zvvht1n1blep0h@ik1eybdutgxsm0lo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/wa0qgae5sdrboh8b'
  
-// it is on heroku fuck face! 
+
 
 
 
 var sequelize = require("./config/connection");
+
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {

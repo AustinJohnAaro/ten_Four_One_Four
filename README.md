@@ -1,5 +1,39 @@
 # ten_Four_One_Four
+To begin, 
+I'd recommend checking out your package.json, 
+around line 19. Here, Node is expecting a script that will be run when npm start is executed, 
+whereas it is currently getting your MySQL connection string.
+ As such, I would recommend modifying it to run node server
+  (or whichever file you wish to serve as the entrypoint for your application):
+"start": "node server",
+From there, 
+we can then move over to your config/connection.js.
+ It looks like you have JAWSDB_URL on lines 11 and 24.
+  I would recommend removing those for now, 
+  as this connection URI will instead be read from Heroku's environment variables instead of via your code.
+Finally, 
+you should then be able to set JAWSDB_URL in your Heroku environment variable (config vars) for your app. 
+To do this, 
+you can use the Heroku CLI. 
+You may find the documentation for this process here; 
+however, as a quick example, 
+if you wish to set the JAWSDB_URL for your app, then you should be able to execute the following:
+heroku config:set JAWSDB_URL=mysql://hm0tfw0xsfp2w0n9:r5zvvht1n1blep0h@ik1eybdutgxsm0lo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/wa0qgae5sdrboh8b
+Once the config var has been set, when your app is deployed to Heroku, then you will be able to access this string via process.env.JAWSDB_URL. (edited) 
+
+It is worth noting that with these changes in place, your app still may not work fully; however, that is perfectly okay! With that said, I believe that the steps outlined above should get you started in the right direction!
+
+You're welcome! While you work on implementing/testing my suggestions above, I will close out this ticket; however, if you do get stuck again or would like additional assistance, please feel free to reach back out via a new ticket! :slightly_smiling_face:
+1:24
+Thank you again for reaching out to the Learning Assistant Team. If you have any further questions or get stuck again, please feel free to reach back out. Additionally, if this conversation was helpful, please consider leaving a rating once this ticket has been closed. I hope you have a wonderful rest of your day!
+
+
+
 <<<<<<< HEAD
+
+
+
+
 Thanks for resubmitting, 
 Austin.  
 When I start your application locally, 
